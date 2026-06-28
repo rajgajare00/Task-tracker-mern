@@ -1,0 +1,126 @@
+.task-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 24px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f8ff 100%);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(59, 130, 246, 0.22);
+  box-shadow: 0 28px 60px rgba(15, 23, 42, 0.1);
+}
+
+.task-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.task-card-header h3 {
+  margin: 0 0 6px;
+  font-size: 1.18rem;
+}
+
+.task-date {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badge.status.pending {
+  color: #1e40af;
+  background: rgba(37, 99, 235, 0.12);
+}
+
+.badge.status.in-progress {
+  color: #c2410c;
+  background: rgba(245, 158, 11, 0.12);
+}
+
+.badge.status.completed {
+  color: #047857;
+  background: rgba(16, 185, 129, 0.14);
+}
+
+.badge.priority.low {
+  background: rgba(14, 165, 233, 0.12);
+  color: #0369a1;
+}
+
+.badge.priority.medium {
+  background: rgba(59, 130, 246, 0.12);
+  color: #1d4ed8;
+}
+
+.badge.priority.high {
+  background: rgba(239, 68, 68, 0.12);
+  color: #b91c1c;
+}
+
+.task-description {
+  margin: 0;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.task-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.secondary-button {
+  background: var(--surface-strong);
+  color: var(--accent);
+  padding: 12px 18px;
+}
+
+.secondary-button:hover {
+  background: #eff6ff;
+}
+
+.text-button {
+  background: transparent;
+  color: var(--muted);
+  padding: 12px 18px;
+}
+
+.text-button:hover {
+  color: var(--accent);
+}
+
+.secondary-button:hover {
+  background: #eff6ff;
+}
+
+.text-button {
+  background: transparent;
+  color: var(--muted);
+  padding: 12px 18px;
+}
+
+.text-button:hover {
+  color: var(--accent);
+}
